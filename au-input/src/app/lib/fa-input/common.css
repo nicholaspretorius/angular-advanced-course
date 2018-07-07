@@ -1,0 +1,29 @@
+/* 
+    Structural component styles 
+    :host styles the container of the component <au-fa-input> 
+*/
+:host {
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+}
+
+/* ::ng-deep ensures the component input style is maintained during content projection and must be combined with :host in order to prevent ::ng-deep overriding ALL input styles */
+:host ::ng-deep input {
+    border: none;
+    box-sizing: border-box; 
+    height: 100%; /* ensures that input remains centered for all heights */
+    margin: 0;
+    outline: none;
+}
+
+:host(.input-focus) {
+    outline:none;
+}
+
+.icon {
+    border: none;
+    padding: 0 5px;
+    text-align: center; 
+    width: 20px; 
+}

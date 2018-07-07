@@ -1,0 +1,16 @@
+$themeColor: red;
+
+/* :host-context ensures the theme is only applied to components within the container that is assigned the theme class */
+:host-context(.au-fa-input-theme-red) {
+    
+    border-color:$themeColor;
+
+    /* elements of the :host within the :host-context need to be class without a space in order to be applied */
+    &.input-focus {
+        border-color: $themeColor;
+        box-shadow: 0 0 5px lightcoral;
+        -webkit-box-shadow: 0 0 5px lightcoral;
+    }
+}
+
+

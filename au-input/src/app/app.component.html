@@ -23,9 +23,37 @@
 
   <div class="form-row">
       <label>Normal Input:</label>
+      <i class="fa fa-chevron-right"></i>
       <input class="normal-input" type="email" name="email" placeholder="E-mail">
   </div>
 
+  <div class="form-row">
+    <label>FA Input:</label>
+    <au-fa-input id="email-field" icon="envelope">
+        <input type="email" name="email" placeholder="E-mail" class="test-class">
+    </au-fa-input>
+  </div>
+
+  <div class="form-row au-fa-input-theme-red">
+    <label>Password:</label>
+    <au-fa-input id="pasword-field" icon="lock">
+      <input type="email" name="email" placeholder="Password" class="test-class">
+    </au-fa-input>
+  </div>
+
+  <div class="form-row stripe-field">
+    <label>Stripe:</label>
+    <au-fa-input icon="cc-stripe">
+      <input type="text" placeholder="Credit Card Number">
+    </au-fa-input>
+  </div>
+
+  <div class="form-row">
+    <label>PayPal:</label>
+    <au-fa-input icon="paypal">
+      <input type="text" placeholder="Paypal Account Number">
+    </au-fa-input>
+  </div>
 </div>
 
 

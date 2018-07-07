@@ -5,15 +5,21 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import 'rxjs/add/operator/map';
+import { FaInputModule } from './lib/fa-input.module';
+//import { FaInputComponent } from './lib/fa-input/fa-input.component';
+//import { InputRefDirective } from './lib/common/input-ref.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    //FaInputComponent,
+    //InputRefDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    FaInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
